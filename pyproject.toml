@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "homework-2-8"
+version = "0.1.0"
+description = "NoSQL DB"
+authors = ["Serhii Pidkopai <spodkopay@gmail.com>"]
+readme = "README.md"
+packages = [{include = "homework_2"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+mongoengine = "^0.26.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
