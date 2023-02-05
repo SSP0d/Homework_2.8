@@ -9,7 +9,7 @@ class Author(Document):
     description = StringField()
 
 
-class Quote(Document):
+class Quotes(Document):
     tags = ListField(StringField(max_length=20))
     author = ReferenceField(Author, reverse_delete_rule=CASCADE)
     quote = StringField()
