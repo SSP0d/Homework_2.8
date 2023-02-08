@@ -2,7 +2,6 @@ import json
 from random import choice
 
 from models import Authors, Quotes
-import connect
 
 
 def json_load(filename):
@@ -21,7 +20,6 @@ def add_authors(filename):
             description=el['description']
         )
         record.save()
-        print(record)
 
 
 def add_quotes(filename):
@@ -34,10 +32,8 @@ def add_quotes(filename):
             quote=el['quote']
         )
         record.save()
-        print(record)
 
 
 if __name__ == '__main__':
-
     add_authors('authors.json')
     add_quotes('qoutes.json')
