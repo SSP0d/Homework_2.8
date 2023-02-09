@@ -1,8 +1,7 @@
 import redis
 from redis_lru import RedisLRU
 
-from models import Authors, Quotes
-import connect
+from models import Quotes
 
 client = redis.StrictRedis(host="localhost", port=6379, password=None)
 cache = RedisLRU(client)

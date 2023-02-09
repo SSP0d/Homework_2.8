@@ -1,7 +1,7 @@
 import json
 from random import choice
 
-from models import Authors, Quotes
+from Part_01.models import Authors, Quotes
 
 
 def json_load(filename):
